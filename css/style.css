@@ -1,0 +1,252 @@
+:root{
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --title-text-color: #212121;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --footer-background-color: #2F303A;
+    --section-background: #F5F4FA;
+    --white-color: #FFFFFF;
+
+}
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+
+}
+
+ul a,
+a{
+    text-decoration: none;
+}
+
+h2,
+h3{
+    color: var(--title-text-color);
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+/*LOGO*/
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.logo .logo-web{
+    color: var(--accent-color);
+}
+
+.logo .logo-header{
+    color: black;
+}
+
+.logo .logo-footer{
+    color: var(--white-color);
+}
+
+
+
+/*HEADER*/
+header{
+    background-color: var(--white-color);
+    font-weight: 500;
+    
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link{
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+.contact a{
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact a:hover,
+.contact a:focus {
+  color: var(--accent-color);
+}
+
+
+
+/*HERO*/
+.hero{
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    color: var(--white-color);
+}
+
+.hero-title{    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero .button{
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+
+/*Преимущества*/
+.section .section-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section .text{
+    line-height: 1.71;
+}
+
+.features p{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
+
+
+
+/*TEAM*/
+.team{
+    background-color: var(--section-background)
+}
+
+.team .team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team p{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+
+
+/*Social*/
+a[aria-label="instagram"]:hover,
+a[aria-label="instagram"]:focus{
+    background-color: var(--accent-color);
+}
+
+
+
+/*Наши клиенты*/
+.client .client-link:hover,
+.client .client-link:focus{
+    color: var(--accent-color)
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color: var(--footer-background-color);
+    color: var(--white-color);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address{
+    font-weight: 400;
+    font-style: normal;
+}
+
+.address-link{
+   color: var(--footer-text-color);
+}
+.address-link:hover,
+.address-link:focus{
+    color: var(--accent-color)
+}
+
+.join-in{
+font-weight: bold;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.footer-text{
+font-size: 12px;
+line-height: 2;
+text-align: center;
+color: rgba(255, 255, 255, 0.4); 
+}
+
+
+/*PORTFOLIO*/
+.filter{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.filter:hover,
+.filter:focus{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.projects-list .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--white-color);
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.category{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
