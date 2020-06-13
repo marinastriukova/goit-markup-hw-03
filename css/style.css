@@ -47,7 +47,7 @@ ul li{
     list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6,ul{
+h1,h2,h3,h4,h5,h6,ul,p{
     margin: 0;
     padding: 0;
 }
@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6,ul{
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -148,6 +148,7 @@ header{
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
     color: var(--white-color);
+    margin-bottom: 93px;
 }
 
 .hero-title{    
@@ -167,24 +168,64 @@ header{
 }
 
 
-/*Преимущества*/
+/*Особенности*/
+.section{
+    display: flex;
+    margin-bottom: 94px;
+}
+
+.section-list + .section-list{
+    margin-left: 30px;
+}
+
 .section .section-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .section .text{
     line-height: 1.71;
+    margin: 0;
+}
+
+.container-title{
+    font-size: 1px;
+    color: transparent;
+}
+
+
+
+/* Чем мы занимаемся?*/
+
+.features-list{
+    display: flex;
+    margin-bottom: 94px;
+}
+
+.features-title{
+    margin-bottom: 50px;
+}
+
+.features-items + .features-items{
+    margin-left: 30px;
 }
 
 .features p{
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
     color: var(--white-color);
     background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    position: relative;
+    margin-top: -71px;
 }
 
 
@@ -192,14 +233,29 @@ header{
 
 /*TEAM*/
 .team{
-    background-color: var(--section-background)
+    background-color: var(--section-background);
 }
+.team-title{
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+
+.team .team-list{
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.team-items + .team-items{
+    margin-left: 30px;
+} 
 
 .team .team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team p{
@@ -208,6 +264,7 @@ header{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 
@@ -218,9 +275,38 @@ a[aria-label="instagram"]:focus{
     background-color: var(--accent-color);
 }
 
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social .social-items{
+    margin-bottom: 24px;
+}
+
+.social-items + .social-items{
+    margin-left: 10px;
+}
+
+
 
 
 /*Наши клиенты*/
+.client-title{
+    margin-bottom: 50px;
+    margin-top: 94px;  
+}
+
+.client .client-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+}
+
+.client-items + .client-items{
+    margin-left: 30px;
+}
+
 .client .client-link:hover,
 .client .client-link:focus{
     color: var(--accent-color)
@@ -238,31 +324,54 @@ footer{
     line-height: 1.71;
 }
 
+.footer{
+    display: flex;
+    align-items: baseline;
+}
+.footer-address{
+    margin-top: 45px;
+    margin-bottom: 28px;
+}
+
 .address{
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
 }
 
 .address-link{
    color: var(--footer-text-color);
+   margin-top: 9px;
 }
+
 .address-link:hover,
 .address-link:focus{
     color: var(--accent-color)
 }
 
 .join-in{
-font-weight: bold;
-line-height: 1.14;
-text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-left: 70px;
+   /* margin-top: 57px;
+    margin-bottom: 57px;*/
 }
 
 .footer-text{
-font-size: 12px;
-line-height: 2;
-text-align: center;
-color: rgba(255, 255, 255, 0.4); 
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);;
 }
+
+
+
 
 
 /*PORTFOLIO*/
@@ -299,3 +408,4 @@ color: rgba(255, 255, 255, 0.4);
     line-height: 1.87;
     color: var(--primary-text-color);
 }
+
